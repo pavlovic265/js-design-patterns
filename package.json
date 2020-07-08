@@ -17,13 +17,14 @@
     "prettier": "~2.0.5",
     "rimraf": "~3.0.2",
     "ts-jest": "~26.1.0",
+    "ts-node": "^8.10.2",
     "tsutils": "~3.17.0",
     "typescript": "~3.9.4"
   },
   "scripts": {
     "clean": "rimraf coverage build tmp",
     "build": "tsc -p tsconfig.release.json",
-    "build:watch": "tsc -w -p tsconfig.release.json",
+    "start": "npx ts-node",
     "lint": "eslint . --ext .ts,.tsx",
     "test": "jest --coverage",
     "test:watch": "jest --watch"
