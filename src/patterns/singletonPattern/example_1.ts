@@ -57,8 +57,6 @@ const myBadSingleton = (function () {
     };
   }
 
-  console.log('test');
-
   return {
     // Always create a new Singleton instance
     getInstance: function () {
