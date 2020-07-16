@@ -13,7 +13,11 @@
     "noUnusedParameters": false,
     "noImplicitAny": false,
     "noImplicitThis": false,
-    "strictNullChecks": false
+    "strictNullChecks": false,
+    "rootDir": "./src",
+    "outDir": "./build",
+    "removeComments": true,
+    "lib": ["es6", "dom"]
   },
   "include": ["src/**/*", "__tests__/**/*"]
 }
