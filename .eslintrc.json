@@ -10,7 +10,7 @@
     "sourceType": "module"
   },
   "plugins": [
-    "@typescript-eslint",
+    "@typescript-eslint"
   ],
   "extends": [
     "eslint:recommended",
@@ -20,6 +20,5 @@
     "prettier/@typescript-eslint"
   ],
   "rules": {
-    "@typescript-eslint/ban-ts-comment": 0
   }
 }
