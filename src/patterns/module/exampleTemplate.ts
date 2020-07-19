@@ -9,16 +9,18 @@ const myNamespace = (function () {
 
   return {
     // A public variable
-    myPublicVar: 'foo',
+    myPublicVar: "foo",
 
     // A public function utilizing privates
     myPublicFunction: function (bar) {
       // Increment our private counter
       myPrivateVar++;
-      console.log('myPrivateVar', myPrivateVar);
+      console.log("myPrivateVar", myPrivateVar);
 
       // Call our private method using bar
       myPrivateMethod(bar);
     },
   };
 })();
+
+export default myNamespace;
