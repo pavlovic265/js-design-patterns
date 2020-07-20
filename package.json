@@ -17,8 +17,7 @@
     "webpack-dev-server": "3.11.0"
   },
   "scripts": {
-    "clean": "rimraf coverage build tmp",
-    "build": "Webpack",
+    "build": "webpack",
     "start": "webpack-dev-server",
     "lint": "eslint . --ext .ts,.tsx"
   },
