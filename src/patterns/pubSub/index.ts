@@ -22,6 +22,7 @@ export function publish(topic: string, args: any): boolean {
   if (!topics[topic]) {
     return false;
   }
+  console.log("topics", topics);
   const subscribers = topics[topic];
 
   subscribers.forEach((subscriber) => subscriber.func(topic, args));

@@ -5,7 +5,8 @@ module.exports = {
   entry: {
     constructor: ["./src/patterns/constructor/index.ts"],
     observer: ["./src/patterns/observer/example/index.ts"],
-    pubsubDecouplingApp: ["./src/patterns/pubSub/decouplingApplications/index.ts"],
+    pubsubMovie: ["./src/patterns/pubSub/movieExample/index.ts"],
+    pubsubAjax: ["./src/patterns/pubSub/ajaxExample/index.ts"],
   },
   output: {
     filename: "[name].js",
@@ -35,9 +36,15 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       // Also generate a test.html
-      filename: "decouplingApp.html",
-      template: "src/patterns/pubSub/decouplingApplications/index.html",
-      chunks: ["pubsubDecouplingApp"],
+      filename: "movie.html",
+      template: "src/patterns/pubSub/movieExample/index.html",
+      chunks: ["pubsubMovie"],
+    }),
+    new HtmlWebpackPlugin({
+      // Also generate a test.html
+      filename: "ajax.html",
+      template: "src/patterns/pubSub/ajaxExample/index.html",
+      chunks: ["pubsubAjax"],
     }),
   ],
   devServer: {
